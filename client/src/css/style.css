@@ -1,0 +1,1453 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+hr {
+  margin-bottom: 15px;
+}
+
+.prof-image {
+  height: 65px;
+  width: 70px;
+  border-radius: 50%;
+  background-color: white;
+  margin-left: 10px;
+}
+
+.container {
+  background-image: url('../assets/images/image1.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Grid Column*/
+.grid-col-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.grid-col-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.grid-col-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-col-5 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.grid-rows-1 {
+  display: grid;
+  grid-template-rows: 1fr;
+}
+
+.grid-rows-2 {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.grid-rows-3 {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+/* all related to box-shadow */
+.shad-1 {
+  box-shadow: 0 3px 10px #000;
+}
+
+/* all related to padding */
+.pad-1 {
+  padding: 5px;
+}
+
+.pad-2 {
+  padding: 10px;
+}
+
+.pad-3 {
+  padding: 15px;
+}
+
+.pad-4 {
+  padding: 20px;
+}
+
+.pad-left-1 {
+  padding-left: 5px;
+}
+
+.pad-left-2 {
+  padding-left: 10px;
+}
+
+.pad-left-3 {
+  padding-left: 15px;
+}
+
+.pad-left-4 {
+  padding-left: 20px;
+}
+
+.pad-right-1 {
+  padding-right: 5px;
+}
+
+.pad-right-2 {
+  padding-right: 10px;
+}
+
+.pad-right-3 {
+  padding-right: 15px;
+}
+
+.pad-right-4 {
+  padding-right: 20px;
+}
+
+/* all related to Margin */
+.marg-1 {
+  margin: 5px
+}
+
+.marg-2 {
+  margin: 10px
+}
+
+.marg-3 {
+  margin: 15px
+}
+
+.marg-4 {
+  margin: 20px;
+}
+
+.marg-left-1 {
+  margin-left: 5px;
+}
+
+.marg-left-2 {
+  margin-left: 10px;
+}
+
+.marg-left-3 {
+  margin-left: 15px;
+}
+
+.marg-left-4 {
+  margin-left: 20px;
+}
+
+.marg-right-1 {
+  margin-right: 5px;
+}
+
+.marg-right-2 {
+  margin-right: 10px;
+}
+
+.marg-right-3 {
+  margin-right: 15px;
+}
+
+/* Setup of colors and background to be used */
+.white {
+  color: #fff;
+  font-family: ubuntu, sans-serif;
+}
+
+.d-purple {
+  color: #320b35;
+  font-family: ubuntu, sans-serif;
+}
+
+.primary {
+  background-color: #320b35;
+  font-family: ubuntu, sans-serif;
+}
+
+.secondary {
+  color: #f5f5f5cf;
+  font-family: ubuntu, sans-serif;
+}
+
+.small {
+  font-size: 13px;
+}
+
+#bg-input {
+  background-color: transparent;
+  border: none;
+  color: whitesmoke;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+i {
+  font-size: 9px;
+}
+
+#create-account,
+#my-account,
+#my-transaction,
+#bank-account-list,#my-bank-accounts {
+  display: none;
+}
+
+#close {
+  text-align: right;
+  font-size: 35px;
+  color: #fff;
+  font-weight: 900;
+}
+
+.active {
+  border-top: 2px solid #9d1132;
+  color: #ded1d1;
+}
+
+.active-icon {
+  margin-left: 10px;
+  color: #1fde16;
+  text-shadow: 0px 4px 13px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media (max-width: 575.98px) {
+  #col-2 {
+    display: grid;
+  }
+
+  .header {
+    background-color: #320b35;
+    padding: 15px;
+    box-shadow: 0 2px 25px #000;
+  }
+
+  .logo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .top {
+    margin-top: 40%;
+  }
+
+  .btn-close {
+    text-align: right;
+    font-size: 45px;
+    color: #fff;
+    margin-top: -30px;
+    font-weight: 900;
+  }
+
+  .navbar {
+    display: none;
+    float: right;
+    margin-top: -20px
+  }
+
+  .navbar-link {
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  .navbar-link-client {
+    text-align: center;
+  }
+
+  .navbar-link a,
+  .navbar-link-client a {
+    margin-right: 11px;
+    font-family: ubuntu, sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+  }
+
+  .navbar-link a:hover,
+  .navbar-link-client a:hover {
+    transition: all 0.7s ease-out 0.2s;
+    border-top: 2px solid #9d1132;
+  }
+
+  .side-nav {
+    display: none;
+    grid-template-rows: 20px 1fr;
+    grid-gap: 10px;
+  }
+
+  .rows {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: auto;
+    color: 0 3px 10px #000;
+    padding: 10px;
+    font-family: ubuntu;
+    font-size: 15px;
+    font-weight: 300;
+  }
+
+  .col-1 {
+    height: 70px;
+  }
+
+  .main {
+    display: grid;
+    grid-template-rows: 5% 1fr 200px;
+  }
+
+  .main-content {
+    display: grid;
+    grid-template-rows: 75px 1fr;
+  }
+
+  .side-1,
+  .side-3 {
+    background-color: transparent;
+  }
+
+  .side-2 {
+    background-color: transparent;
+  }
+
+  .center {
+    font-family: ubuntu;
+    text-align: center;
+  }
+
+  .bottom {
+    margin-bottom: 10px;
+  }
+
+  .btn {
+    height: 35px;
+    border: none;
+    font-family: ubuntu;
+    padding: 10px;
+    color: #ccc;
+    margin-top: 0px;
+    border-radius: 50px;
+    outline: none;
+  }
+
+  .btn-flat {
+    height: 35px;
+    width: 85px;
+    border: none;
+    font-family: ubuntu;
+    padding: 10px;
+    color: #ccc;
+    box-shadow: 0 3px 10px #000;
+    outline: none;
+  }
+
+  .btn-1 {
+    width: 130px;
+    height: 35px;
+    border: none;
+    box-shadow: 0 2px 6px #320b35;
+    font-family: ubuntu;
+    padding: 10px;
+    color: #ccc;
+    margin-top: 0px;
+    border-radius: 50px;
+    outline: none;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .btn:hover,
+  .btn-1:hover {
+    cursor: pointer;
+  }
+
+  .heading-1 {
+    font-size: 2rem;
+  }
+
+  .heading-5 {
+    padding-top: 50%;
+  }
+
+  .p-1 {
+    font-size: 12px;
+    font-weight: 200;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .reset {
+    margin-right: 10px;
+    margin-left: 15%;
+    color: #320b35;
+  }
+
+  .btn-reset {
+    margin-left: 20px;
+  }
+
+  .u-list {
+    padding: 20px;
+    text-align: center;
+    list-style: none;
+  }
+
+  .u-list li {
+    padding: 10px;
+  }
+
+  .lbl-debit {
+    padding-top: 20px;
+    font-size: 12px;
+    text-align: center;
+    border-left: 5px solid #c5f7ff;
+  }
+
+  .lbl-credit {
+    padding-top: 20px;
+    font-size: 12px;
+    text-align: center;
+    border-left: 5px solid #8BC34A;
+  }
+
+  /* Bank account list styles  */
+  .bank-account-list {
+    display: none;
+  }
+
+  /**** end of Bank account list styles */
+
+  /* PoP-UP Modal Styling */
+  .single-account {
+    margin-bottom: 200px;
+    display: none;
+    z-index: 1;
+    grid-template-rows: 100px 1fr 100px;
+  }
+
+  .modal-section {
+    display: grid;
+    grid-template-columns: 50px 1fr 40px;
+  }
+
+  .popup {
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    z-index: 1;
+    background-color: white;
+    height: 350px;
+    animation-name: slideIn;
+    animation-duration: .9s;
+  }
+
+  .popup-top {
+    display: grid;
+    grid-template-columns: 1fr 39px;
+  }
+
+  .popup-center {
+    display: grid;
+    grid-template-rows: 30px 1fr;
+  }
+
+  .popup-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  @keyframes slideIn {
+    from {
+      margin-top: -100%;
+      opacity: 0;
+    }
+
+    to {
+      margin-top: 0;
+      opacity: 1;
+    }
+  }
+
+  /****** end of Modal Styling */
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #col-2 {
+    display: grid;
+  }
+
+  .header {
+    background-color: #320b35;
+    padding: 15px;
+  }
+
+  .top {
+    margin-top: 18%;
+  }
+
+  .logo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .btn-close {
+    text-align: right;
+    font-size: 45px;
+    color: #fff;
+    margin-top: -30px;
+    font-weight: 900;
+  }
+
+  .btn-flat {
+    height: 35px;
+    width: 85px;
+    border: none;
+    font-family: ubuntu;
+    padding: 10px;
+    color: #ccc;
+    box-shadow: 0 3px 10px #000;
+    outline: none;
+  }
+
+  .navbar {
+    display: none;
+    float: right;
+    margin-top: -20px
+  }
+
+  .navbar-link {
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  .navbar-link-client {
+    text-align: center;
+  }
+
+  .navbar-link a,
+  .navbar-link-client a {
+    margin-right: 20px;
+    font-family: ubuntu, sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+  }
+
+  .navbar-link a:hover,
+  .navbar-link-client a:hover {
+    transition: all 0.7s ease-out 0.2s;
+    border-top: 2px solid #9d1132;
+  }
+
+  .side-nav {
+    display: none;
+    grid-template-rows: 20px 1fr;
+    grid-gap: 10px;
+  }
+
+  .rows {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: auto;
+    color: #320b35;
+    padding: 10px;
+    font-family: ubuntu;
+    font-size: 15px;
+    font-weight: 300;
+  }
+
+  .col-1 {
+    height: 70px;
+  }
+
+  .main {
+    display: grid;
+    grid-template-rows: 5% 1fr 85px;
+  }
+
+  .main-content {
+    display: grid;
+    grid-template-rows: 75px 1fr;
+  }
+
+  .side-1,
+  .side-3 {
+    background-color: transparent;
+  }
+
+  .side-2 {
+    background-color: transparent;
+  }
+
+  .center {
+    font-family: ubuntu;
+    text-align: center;
+    padding: 20px
+  }
+
+  .btn {
+    height: 35px;
+    border: none;
+    font-family: ubuntu;
+    padding: 10px;
+    color: #ccc;
+    margin-top: 0px;
+    border-radius: 50px;
+    outline: none;
+  }
+
+  .btn-1 {
+    width: 130px;
+    height: 35px;
+    border: none;
+    box-shadow: 0 2px 6px #320b35;
+    font-family: ubuntu;
+    padding: 10px;
+    color: #ccc;
+    margin-top: 0px;
+    border-radius: 50px;
+    outline: none;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .btn:hover,
+  .btn-1:hover {
+    cursor: pointer;
+  }
+
+  .heading-1 {
+    font-size: 2rem;
+  }
+
+  .heading-5 {
+    padding-top: 50%;
+  }
+
+  .p-1 {
+    font-size: 15px;
+    font-weight: 200;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .reset {
+    margin-right: 10px;
+    margin-left: 15%;
+    color: #320b35;
+  }
+
+  .btn-reset {
+    margin-left: 20px;
+  }
+
+  .u-list {
+    padding: 20px;
+    text-align: center;
+    list-style: none;
+  }
+
+  .u-list li {
+    padding: 10px;
+  }
+
+  .lbl-debit {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .lbl-credit {
+    padding: 10px;
+    text-align: center;
+  }
+
+  /* PoP-UP Modal Styling */
+  .single-account {
+    margin-bottom: 200px;
+    display: none;
+    z-index: 1;
+    grid-template-rows: 100px 1fr 100px;
+  }
+
+  .modal-section {
+    display: grid;
+    grid-template-columns: 50px 1fr 40px;
+  }
+
+  .popup {
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    z-index: 1;
+    background-color: white;
+    animation-name: slideIn;
+    animation-duration: .9s;
+  }
+
+  .popup-top {
+    display: grid;
+    grid-template-columns: 1fr 39px;
+  }
+
+  .popup-center {
+    display: grid;
+    grid-template-rows: 30px 1fr;
+  }
+
+  .popup-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  @keyframes slideIn {
+    from {
+      margin-top: -100%;
+      opacity: 0;
+    }
+
+    to {
+      margin-top: 0;
+      opacity: 1;
+    }
+  }
+
+  /****** end of Modal Styling */
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #col-2 {
+    display: grid;
+    grid-template-columns: 1fr 250px;
+  }
+
+  .header {
+    background-color: #320b35;
+    padding: 15px;
+  }
+
+  .top {
+    /* margin-top: 10%; */
+  }
+
+  .navbar {
+    float: right;
+    margin-top: -20px
+  }
+
+  .navbar-link {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  .navbar-link-client {
+    text-align: center;
+  }
+
+  .navbar-link a,
+  .navbar-link-client a {
+    margin-right: 20px;
+    font-family: ubuntu, sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+  }
+
+  .navbar-link a:hover,
+  .navbar-link-client a:hover {
+    transition: all 0.7s ease-out 0.2s;
+    border-top: 2px solid #9d1132;
+  }
+
+  .side-nav,
+  .col-right {
+    display: none;
+  }
+
+  .rows {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    color: #320b35;
+    height: 65px;
+    padding: 10px;
+    font-family: ubuntu;
+    font-size: 15px;
+    font-weight: 300;
+  }
+
+  .main {
+    display: grid;
+    grid-template-columns: 3% 1fr 0;
+  }
+
+  .main-content {
+    display: grid;
+    grid-template-rows: 145px 1fr;
+  }
+
+  .side-1 {
+    background-color: transparent;
+    height: 100vh;
+  }
+
+  .side-2 {
+    background-color: transparent;
+  }
+
+  .side-3 {
+    display: none;
+  }
+
+  .center {
+    margin-left: 35px;
+    font-family: ubuntu;
+    text-align: center;
+    margin-right: 20%;
+    padding: 20px
+  }
+
+  .btn {
+    height: 35px;
+    border: none;
+    box-shadow: 0 2px 6pc #320b35;
+    font-family: ubuntu;
+    padding: 10px;
+    color: #ccc;
+    margin-top: 0px;
+    border-radius: 50px;
+    outline: none;
+  }
+
+  .btn-1 {
+    width: 130px;
+    height: 35px;
+    border: none;
+    box-shadow: 0 2px 6px #320b35;
+    font-family: ubuntu;
+    padding: 10px;
+    color: #ccc;
+    margin-top: 0px;
+    border-radius: 50px;
+    outline: none;
+  }
+
+  .btn-flat {
+    height: 35px;
+    width: 85px;
+    border: none;
+    font-family: ubuntu;
+    padding: 10px;
+    color: #ccc;
+    box-shadow: 0 3px 10px #000;
+    outline: none;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .btn:hover,
+  .btn-1:hover {
+    cursor: pointer;
+  }
+
+  .heading-1 {
+    font-size: 2rem;
+  }
+
+  .heading-5 {
+    padding-top: 50%;
+  }
+
+  .p-1 {
+    font-size: 15px;
+    font-weight: 200;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .reset {
+    margin-right: 10px;
+    margin-left: 15%;
+    color: #320b35;
+  }
+
+  .btn-reset {
+    margin-top: 25px;
+    margin-left: 20px;
+  }
+
+  .u-list {
+    padding: 20px;
+    text-align: center;
+    list-style: none;
+  }
+
+  .u-list li {
+    padding: 10px;
+  }
+
+  .lbl-debit {
+    padding: 10px;
+    text-align: center;
+    border-left: 5px solid #c5f7ff;
+  }
+
+  .lbl-credit {
+    padding: 10px;
+    text-align: center;
+    border-left: 5px solid #8BC34A;
+  }
+
+  /* PoP-UP Modal Styling */
+  .single-account {
+    margin-bottom: 200px;
+    display: none;
+    z-index: 1;
+    grid-template-rows: 100px 1fr 100px;
+  }
+
+  .modal-section {
+    display: grid;
+    grid-template-columns: 50px 1fr 40px;
+  }
+
+  .popup {
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    z-index: 1;
+    background-color: white;
+    height: 350px;
+    animation-name: slideIn;
+    animation-duration: .9s;
+  }
+
+  .popup-top {
+    display: grid;
+    grid-template-columns: 1fr 39px;
+  }
+
+  .popup-center {
+    display: grid;
+    grid-template-rows: 30px 1fr;
+  }
+
+  .popup-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  @keyframes slideIn {
+    from {
+      margin-top: -100%;
+      opacity: 0;
+    }
+
+    to {
+      margin-top: 0;
+      opacity: 1;
+    }
+  }
+
+  /****** end of Modal Styling */
+}
+
+@media (min-width:992px) and (max-width:1199.98px) {
+  #col-2 {
+    display: grid;
+    grid-template-columns: 1fr 250px;
+  }
+
+  .header {
+    background-color: #320b35;
+    padding: 15px;
+  }
+
+  .top {
+    margin-top: 10%;
+  }
+
+  .navbar {
+    float: right;
+    margin-top: -20px
+  }
+
+  .navbar-link {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  .navbar-link-client {
+    text-align: center;
+  }
+
+  .navbar-link a,
+  .navbar-link-client a {
+    margin-right: 20px;
+    font-family: ubuntu, sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+  }
+
+  .navbar-link a:hover,
+  .navbar-link-client a:hover {
+    transition: all 0.7s ease-out 0.2s;
+    border-top: 2px solid #9d1132;
+  }
+
+  .side-nav,
+  .col-right {
+    display: none;
+  }
+
+  .rows {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    color: #320b35;
+    height: 65px;
+    padding: 10px;
+    font-family: ubuntu;
+    font-size: 15px;
+    font-weight: 300;
+  }
+
+  .main {
+    display: grid;
+    grid-template-columns: 3% 1fr 0;
+  }
+
+  .main-content {
+    display: grid;
+    grid-template-rows: 145px 1fr;
+  }
+
+  .side-1 {
+    background-color: transparent;
+    height: 100vh;
+  }
+
+  .side-2 {
+    background-color: transparent;
+  }
+
+  .side-3 {
+    display: none;
+  }
+
+  .center {
+    margin-left: 20%;
+    font-family: ubuntu;
+    text-align: center;
+    margin-right: 20%;
+    padding: 20px
+  }
+
+  .btn {
+    height: 35px;
+    border: none;
+    font-family: ubuntu;
+    padding: 10px;
+    color: #ccc;
+    margin-top: 0px;
+    border-radius: 50px;
+    outline: none;
+  }
+
+  .btn-1 {
+    width: 130px;
+    height: 35px;
+    border: none;
+    box-shadow: 0 2px 6px #320b35;
+    font-family: ubuntu;
+    padding: 10px;
+    color: #ccc;
+    margin-top: 0px;
+    border-radius: 50px;
+    outline: none;
+  }
+
+  .btn-flat {
+    height: 35px;
+    width: 85px;
+    border: none;
+    font-family: ubuntu;
+    padding: 10px;
+    color: #ccc;
+    box-shadow: 0 3px 10px #000;
+    outline: none;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .btn:hover,
+  .btn-1:hover {
+    cursor: pointer;
+  }
+
+  .heading-1 {
+    font-size: 2rem;
+  }
+
+  .heading-5 {
+    padding-top: 50%;
+  }
+
+  .p-1 {
+    font-size: 15px;
+    font-weight: 200;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .reset {
+    margin-right: 10px;
+    margin-left: 15%;
+    color: #320b35;
+  }
+
+  .btn-reset {
+    margin-top: 25px;
+    margin-left: 20px;
+  }
+
+  .u-list {
+    padding: 20px;
+    text-align: center;
+    list-style: none;
+  }
+
+  .u-list li {
+    padding: 10px;
+  }
+
+  .lbl-debit {
+    padding: 10px;
+    text-align: center;
+    border-left: 5px solid #c5f7ff;
+  }
+
+  .lbl-credit {
+    padding: 10px;
+    text-align: center;
+    border-left: 5px solid #8BC34A;
+  }
+
+  /* PoP-UP Modal Styling */
+  .single-account {
+    margin-bottom: 200px;
+    margin-top: 20px;
+    display: none;
+    z-index: 1;
+    grid-template-columns: 100px 1fr 100px;
+  }
+
+  .modal-section {
+    display: grid;
+    grid-template-columns: 50px 1fr 40px;
+  }
+
+  .popup {
+    display: grid;
+    grid-template-rows: 65px 1fr;
+    z-index: 1;
+    background-color: white;
+    animation-name: slideIn;
+    animation-duration: .5s;
+  }
+
+  .popup-top {
+    display: grid;
+    grid-template-columns: 1fr 39px;
+  }
+
+  .popup-center {
+    display: grid;
+    grid-template-rows: 30px 1fr;
+  }
+
+  .popup-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  @keyframes slideIn {
+    from {
+      margin-top: -100%;
+      opacity: 0;
+    }
+
+    to {
+      margin-top: 0;
+      opacity: 1;
+    }
+  }
+
+  /****** end of Modal Styling */
+}
+
+@media(min-width:1200px) {
+  #col-2 {
+    display: grid;
+    grid-template-columns: 1fr 250px;
+  }
+
+  .header {
+    background-color: #320b35;
+    padding: 15px;
+  }
+
+  .top {
+    margin-top: 18%;
+  }
+
+  .navbar {
+    float: right;
+    margin-top: -20px
+  }
+
+  .navbar-link {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  .navbar-link-client {
+    text-align: center;
+  }
+
+  .navbar-link a,
+  .navbar-link-client a {
+    margin-right: 20px;
+    font-family: ubuntu, sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+  }
+
+  .navbar-link a:hover,
+  .navbar-link-client a:hover {
+    transition: all 0.7s ease-out 0.2s;
+    border-top: 2px solid #9d1132;
+  }
+
+  .side-nav,
+  .col-right {
+    display: none;
+  }
+
+  .rows {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    color: #320b35;
+    height: 65px;
+    padding: 10px;
+    font-family: ubuntu;
+    font-size: 15px;
+    font-weight: 300;
+  }
+
+  .main {
+    display: grid;
+    grid-template-columns: 20% 1fr 15%;
+    height: 100vh;
+  }
+
+  .main-content {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+
+  }
+
+  .side-1,
+  .side-3 {
+    background-color: transparent;
+    height: 100vh;
+  }
+
+  .side-2 {
+    background-color: transparent;
+    height: 100vh;
+  }
+
+  .center {
+    font-family: ubuntu;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .btn {
+    height: 35px;
+    border: none;
+    font-family: ubuntu;
+    padding: 10px;
+    color: #ccc;
+    margin-top: 0px;
+    border-radius: 50px;
+    outline: none;
+  }
+
+  .btn-1 {
+    width: 150px;
+    height: 35px;
+    border: none;
+    box-shadow: 0 2px 6px #320b35;
+    font-family: ubuntu;
+    padding: 10px;
+    color: #ccc;
+    margin-top: 0px;
+    border-radius: 50px;
+    outline: none;
+  }
+
+  .btn-flat {
+    height: 35px;
+    width: 85px;
+    border: none;
+    font-family: ubuntu;
+    padding: 10px;
+    color: #ccc;
+    box-shadow: 0 3px 10px #000;
+    outline: none;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .btn:hover,
+  .btn-1:hover {
+    cursor: pointer;
+  }
+
+  .heading-1 {
+    font-size: 2rem;
+  }
+
+  .heading-5 {
+    padding-top: 50%;
+  }
+
+  .p-1 {
+    font-size: 15px;
+    font-weight: 200;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .reset {
+    margin-right: 10px;
+    margin-left: 15%;
+    color: #320b35;
+  }
+
+  .btn-reset {
+    margin-top: 25px;
+    margin-left: 20px;
+  }
+
+  .u-list {
+    padding: 20px;
+    text-align: center;
+    list-style: none;
+  }
+
+  .u-list li {
+    padding: 10px;
+  }
+
+  .lbl-debit {
+    padding: 10px;
+    text-align: center;
+    border-left: 5px solid #c5f7ff;
+  }
+
+  .lbl-credit {
+    padding: 10px;
+    text-align: center;
+    border-left: 5px solid #8BC34A;
+  }
+
+  /* PoP-UP Modal Styling */
+  .single-account {
+    margin-top: 50px;
+    margin-bottom: 200px;
+    display: none;
+    z-index: 1;
+    grid-template-columns: 100px 1fr 100px;
+  }
+
+  .modal-section {
+    display: grid;
+    grid-template-columns: 25% 1fr 25%;
+  }
+
+  .popup {
+    display: grid;
+    grid-template-rows: 65px 1fr;
+    z-index: 1;
+    background-color: #ffffff;
+    animation-name: slideIn;
+    animation-duration: .9s;
+  }
+
+  .popup-top {
+    display: grid;
+    grid-template-columns: 1fr 39px;
+  }
+
+  .popup-center {
+    display: grid;
+    grid-template-rows: 1fr;
+  }
+
+  .popup-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  @keyframes slideIn {
+    from {
+      margin-top: -100%;
+      opacity: 0;
+    }
+
+    to {
+      margin-top: 0;
+      opacity: 1;
+    }
+  }
+
+  /****** end of Modal Styling */
+}

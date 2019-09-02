@@ -1,0 +1,14 @@
+# Ignore Node_Modules folder
+node_modules/
+
+# Ignore .nyc Folder
+.nyc_output/
+
+# Ignore Coverage Folder
+coverage/
+
+# Ignore Package-lock file
+package-lock.json
+
+# Ignore the development keys
+# server/config/dev.keys.js
