@@ -201,12 +201,12 @@ i {
   font-size: 9px;
 }
 
-#create-account,
+/* #create-account,
 #my-account,
 #my-transaction,
 #bank-account-list,#my-bank-accounts {
   display: none;
-}
+} */
 
 #close {
   text-align: right;
