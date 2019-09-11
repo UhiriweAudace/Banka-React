@@ -3,7 +3,7 @@ const HtmlWP = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
-  entry: path.join(__dirname, '/src/index.js'),
+  entry: path.join(__dirname, "/src","/index.js"),
   output: {
     filename: 'build.js',
     path: path.join(__dirname, '/dist')
@@ -35,7 +35,7 @@ module.exports = {
   plugins: [
     new HtmlWP ({
       filename: "index.html",
-      template: path.join(__dirname, '/src/index.html')
+      template: path.join(__dirname, "/src","/index.html")
     }),
     new MiniCssExtractPlugin({
       filename: "[name].css",

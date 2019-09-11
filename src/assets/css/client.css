@@ -1,0 +1,1126 @@
+@media (max-width: 575.98px) {
+  .h-1 {
+    height: 50px;
+    width: 100%;
+    background-color: #320b35;
+    box-shadow: 0 4px 5px #000;
+    padding-top: 20px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+
+  .sidenav {
+    z-index: 1;
+    height: 100%;
+    /* padding: 20px; */
+    display: grid;
+    background-color: #320b35;
+    grid-template-rows: 70px 1fr 40px;
+  }
+
+  .profile {
+    padding: 20px 0 0 0px;
+  }
+
+  .profile-card {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 5px;
+    padding-top: 10px;
+  }
+
+  .profile-image {
+    background-image: url('../assets/icons/profile1.png');
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    margin-left: 28%;
+    margin-bottom: 20px;
+    height: 180px;
+    width: 180px;
+  }
+
+  .profile-content {
+    padding-top: 25px;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .p-bottom {
+    padding-bottom: 15px;
+  }
+
+  .no-bullet {
+    list-style: none;
+  }
+
+
+  ul li {
+    padding: 5px;
+    font-size: 15px;
+  }
+
+  ul li a {
+    text-decoration: none;
+    color: #ccc;
+  }
+
+  ul li a:hover {
+    color: #ff4d86;
+    border-top: 1px solid #ff4d86;
+  }
+
+  .btn-upload {
+    margin-left: 27%;
+    margin-top: 10px;
+    color: #f3e8e8;
+    background-color: #ef0d41;
+  }
+
+  .btn-upload:hover {
+    color: #f3e8e8;
+    background-color: #320b35;
+  }
+
+  .bank-profile {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .bank-profile-head {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .balance-amount {
+    height: 160px;
+    width: 160px;
+    margin-left: 31%;
+    border-bottom-right-radius: 45px;
+  }
+
+  .saving-amount {
+    height: 160px;
+    width: 160px;
+    margin-left: 31%;
+    margin-top: 5px;
+    border-bottom-right-radius: 45px;
+  }
+
+  .card-heading {
+    font-family: ubuntu;
+    font-weight: 400;
+    text-align: center;
+    padding: 15px;
+    background-color: #320b35;
+    color: #ded1cc;
+    border-top-right-radius: 30px;
+  }
+
+  .amount-number {
+    text-align: center;
+    padding-top: 20px;
+    font-size: larger;
+    font-family: ubuntu;
+    background-color: #007bff;
+    color: #fff;
+  }
+
+  .currency {
+    background-color: #320b35;
+    border-bottom-right-radius: 35px;
+    padding: 20px;
+    text-align: center;
+    color: #ded1cc;
+    font-family: ubuntu;
+    font-size: 12px;
+  }
+
+  .card-heading-1 {
+    font-family: ubuntu;
+    font-weight: 400;
+    text-align: center;
+    padding: 15px;
+    background-color: #320b35;
+    color: #ded1cc;
+    border-top-left-radius: 30px;
+  }
+
+  .amount-number-1 {
+    text-align: center;
+    padding-top: 20px;
+    font-size: larger;
+    font-family: ubuntu;
+    background-color: #007bff;
+    color: #fff;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+  }
+
+  .account-status {
+    font-size: 12px;
+    padding-top: 5px;
+  }
+
+  .currency-1 {
+    background-color: #320b35;
+    border-bottom-right-radius: 35px;
+    padding: 20px;
+    text-align: center;
+    color: #ded1cc;
+    font-family: ubuntu;
+    font-size: 12px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 35px;
+  }
+
+  .bank-profile-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    padding-left: 10%;
+    padding-top: 15px;
+  }
+
+  .ft-content {
+    text-align: center;
+  }
+
+  /* styles of my transaction section */
+  .transaction-list {
+    padding: 20px 0 0 0;
+  }
+
+  .t-row {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 95px 1fr 95px;
+    box-shadow: 0 3px 10px #000000;
+    margin: 0 10px 20px 10px;
+  }
+
+  .a-row {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 100px;
+    box-shadow: 0 3px 10px #000000;
+    margin: 0 10px 20px 10px;
+  }
+
+  .t-details {
+    display: grid;
+    text-align: center;
+    /* grid-template-rows: 1fr 1fr; */
+  }
+
+  .t-buttons {
+    padding: 10px;
+  }
+
+  .pad-10 {
+    padding: 10px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .h-1 {
+    height: 50px;
+    width: 100%;
+    background-color: #320b35;
+    padding-top: 20px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+
+  .sidenav {
+    z-index: 1;
+    height: 100%;
+    padding: 20px;
+    display: grid;
+    background-color: #320b35;
+    grid-template-rows: 70px 1fr 40px;
+  }
+
+  .profile {
+    padding: 20px 0 0 0px;
+  }
+
+  .profile-card {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 5px;
+    padding-top: 10px;
+  }
+
+  .profile-image {
+    background-image: url('../assets/icons/profile1.png');
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    margin-left: 34%;
+    margin-bottom: 20px;
+    height: 180px;
+    width: 180px;
+  }
+
+  .profile-content {
+    padding-top: 25px;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .p-bottom {
+    padding-bottom: 15px;
+  }
+
+  .no-bullet {
+    list-style: none;
+  }
+
+
+  ul li {
+    padding: 5px;
+    font-size: 15px;
+  }
+
+  ul li a {
+    text-decoration: none;
+    color: #ccc;
+  }
+
+  ul li a:hover {
+    color: #ff4d86;
+    border-top: 1px solid #ff4d86;
+  }
+
+  .btn-upload {
+    margin-left: 37%;
+    margin-top: 10px;
+    color: #f3e8e8;
+    background-color: #ef0d41;
+  }
+
+  .btn-upload:hover {
+    color: #f3e8e8;
+    background-color: #320b35;
+  }
+
+  .bank-profile {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .bank-profile-head {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .balance-amount {
+    height: 160px;
+    width: 160px;
+    margin-left: 31%;
+    margin-top: 50px;
+    border-bottom-right-radius: 45px;
+  }
+
+  .saving-amount {
+    height: 160px;
+    width: 160px;
+    margin-left: 31%;
+    margin-top: 50px;
+    border-bottom-right-radius: 45px;
+  }
+
+  .card-heading {
+    font-family: ubuntu;
+    font-weight: 400;
+    text-align: center;
+    padding: 15px;
+    background-color: #320b35;
+    color: #ded1cc;
+    border-top-right-radius: 30px;
+  }
+
+  .amount-number {
+    text-align: center;
+    padding-top: 20px;
+    font-size: larger;
+    font-family: ubuntu;
+    background-color: #007bff;
+    color: #fff;
+  }
+
+  .currency {
+    background-color: #320b35;
+    border-bottom-right-radius: 35px;
+    padding: 20px;
+    text-align: center;
+    color: #ded1cc;
+    font-family: ubuntu;
+    font-size: 12px;
+  }
+
+  .card-heading-1 {
+    font-family: ubuntu;
+    font-weight: 400;
+    text-align: center;
+    padding: 15px;
+    background-color: #320b35;
+    color: #ded1cc;
+    border-top-left-radius: 30px;
+  }
+
+  .amount-number-1 {
+    text-align: center;
+    padding-top: 20px;
+    font-size: larger;
+    font-family: ubuntu;
+    background-color: #007bff;
+    color: #fff;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+  }
+
+  .account-status {
+    font-size: 12px;
+    padding-top: 5px;
+  }
+
+  .currency-1 {
+    background-color: #320b35;
+    border-bottom-right-radius: 35px;
+    padding: 20px;
+    text-align: center;
+    color: #ded1cc;
+    font-family: ubuntu;
+    font-size: 12px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 35px;
+  }
+
+  .bank-profile-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    padding-left: 10%;
+    padding-top: 15px;
+  }
+
+  .ft-content {
+    text-align: center;
+  }
+
+  /* styles of my transaction section */
+  .transaction-list {
+    padding: 20px 0 0 0;
+  }
+
+  .t-row {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+    box-shadow: 0 3px 10px #000000;
+    margin: 0 10px 20px 10px;
+  }
+
+  .a-row {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 100px;
+    box-shadow: 0 3px 10px #000000;
+    margin: 0 10px 20px 10px;
+  }
+
+  .t-details {
+    display: grid;
+    text-align: center;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 5px;
+  }
+
+  .t-buttons {
+    padding-top: 15px;
+  }
+
+  .pad-10 {
+    padding: 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .h-1 {
+    height: 50px;
+    background-color: #320b35;
+    padding-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+
+  .sidenav {
+    z-index: 1;
+    height: 100%;
+    padding: 20px;
+    display: grid;
+    background-color: #320b35;
+    grid-template-rows: 70px 1fr 40px;
+  }
+
+  .profile {
+    padding: 20px 0 0 0px;
+  }
+
+  .profile-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+    padding-top: 100px;
+  }
+
+  .profile-image {
+    background-image: url('../assets/icons/profile1.png');
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    margin-left: 25px;
+    margin-top: -5px;
+    margin-bottom: 20px;
+    height: 180px;
+    width: 180px;
+  }
+
+  .profile-content {
+    border-left: 1px solid #ccc;
+    padding-top: 15px;
+    padding-left: 25px;
+  }
+
+  .p-bottom {
+    padding-bottom: 15px;
+  }
+
+  .no-bullet {
+    list-style: none;
+  }
+
+
+  ul li {
+    padding: 5px;
+  }
+
+  ul li a {
+    text-decoration: none;
+    color: #ccc;
+  }
+
+  ul li a:hover {
+    color: #ff4d86;
+    border-top: 1px solid #ff4d86;
+  }
+
+  .btn-upload {
+    margin-left: 45px;
+    margin-top: 10px;
+    color: #f3e8e8;
+    background-color: #ef0d41;
+  }
+
+  .btn-upload:hover {
+    color: #f3e8e8;
+    background-color: #320b35;
+  }
+
+  .bank-profile {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .bank-profile-head {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  .balance-amount {
+    height: 160px;
+    width: 160px;
+    margin-left: 45%;
+    margin-top: 50px;
+    border-bottom-right-radius: 45px;
+  }
+
+  .saving-amount {
+    height: 160px;
+    width: 160px;
+    margin-right: 45%;
+    margin-top: 50px;
+    border-bottom-right-radius: 45px;
+  }
+
+  .card-heading {
+    font-family: ubuntu;
+    font-weight: 400;
+    text-align: center;
+    padding: 15px;
+    background-color: #320b35;
+    color: #ded1cc;
+    border-top-right-radius: 30px;
+  }
+
+  .amount-number {
+    text-align: center;
+    padding-top: 20px;
+    font-size: larger;
+    font-family: ubuntu;
+    background-color: #007bff;
+    color: #fff;
+  }
+
+  .currency {
+    background-color: #320b35;
+    border-bottom-right-radius: 35px;
+    padding: 20px;
+    text-align: center;
+    color: #ded1cc;
+    font-family: ubuntu;
+    font-size: 12px;
+  }
+
+  .card-heading-1 {
+    font-family: ubuntu;
+    font-weight: 400;
+    text-align: center;
+    padding: 15px;
+    background-color: #320b35;
+    color: #ded1cc;
+    border-top-left-radius: 30px;
+  }
+
+  .amount-number-1 {
+    text-align: center;
+    padding-top: 20px;
+    font-size: larger;
+    font-family: ubuntu;
+    background-color: #007bff;
+    color: #fff;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+  }
+
+  .currency-1 {
+    background-color: #320b35;
+    border-bottom-right-radius: 35px;
+    padding: 20px;
+    text-align: center;
+    color: #ded1cc;
+    font-family: ubuntu;
+    font-size: 12px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 35px;
+  }
+
+  .bank-profile-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    padding-left: 20%;
+  }
+
+  .ft-content {
+    text-align: center;
+  }
+
+  /* styles of my transaction section */
+  .transaction-list {
+    padding: 20px;
+    padding: 20px 40px 0 0;
+  }
+
+  .t-row {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+    box-shadow: 0 3px 10px #000000;
+    margin: 0 10px 20px 10px;
+  }
+
+  .a-row {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 100px;
+    box-shadow: 0 3px 10px #000000;
+    margin: 0 10px 20px 10px;
+  }
+
+  .t-details {
+    display: grid;
+    text-align: center;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 5px;
+  }
+
+  .t-buttons {
+    padding-top: 15px;
+  }
+
+  .pad-10 {
+    padding: 10px;
+  }
+}
+
+@media (min-width:992px) and (max-width:1199.98px) {
+  .h-1 {
+    height: 50px;
+    background-color: #320b35;
+    padding-top: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+
+  .sidenav {
+    z-index: 1;
+    height: 100%;
+    padding: 20px;
+    display: grid;
+    background-color: rgb(50, 11, 53);
+    grid-template-rows: 70px 1fr 40px;
+  }
+
+  .profile {
+    padding: 20px 0 0 0px;
+  }
+
+  .profile-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+    padding-top: 100px;
+  }
+
+  .profile-image {
+    background-image: url('../assets/icons/profile1.png');
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    margin-left: 25px;
+    margin-top: -5px;
+    margin-bottom: 20px;
+    height: 180px;
+    width: 180px;
+  }
+
+  .profile-content {
+    padding-top: 40px;
+    padding-left: 25px;
+  }
+
+  .p-bottom {
+    padding-bottom: 15px;
+  }
+
+  .no-bullet {
+    list-style: none;
+  }
+
+
+  ul li {
+    padding: 5px;
+  }
+
+  ul li a {
+    text-decoration: none;
+    color: #ccc;
+  }
+
+  ul li a:hover {
+    color: #ff4d86;
+    border-top: 1px solid #ff4d86;
+  }
+
+  .btn-upload {
+    margin-left: 80px;
+    margin-top: 10px;
+    color: #f3e8e8;
+    background-color: #ef0d41;
+  }
+
+  .btn-upload:hover {
+    color: #f3e8e8;
+    background-color: #320b35;
+  }
+
+  .bank-profile {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .bank-profile-head {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  .balance-amount {
+    height: 160px;
+    width: 160px;
+    margin-left: 45%;
+    margin-top: 50px;
+    border-bottom-right-radius: 45px;
+  }
+
+  .saving-amount {
+    height: 160px;
+    width: 160px;
+    margin-right: 45%;
+    margin-top: 50px;
+    border-bottom-right-radius: 45px;
+  }
+
+  .card-heading {
+    font-family: ubuntu;
+    font-weight: 400;
+    text-align: center;
+    padding: 15px;
+    background-color: #320b35;
+    color: #ded1cc;
+    border-top-right-radius: 30px;
+  }
+
+  .amount-number {
+    text-align: center;
+    padding-top: 20px;
+    font-size: larger;
+    font-family: ubuntu;
+    background-color: #007bff;
+    color: #fff;
+  }
+
+  .currency {
+    background-color: #320b35;
+    border-bottom-right-radius: 35px;
+    padding: 20px;
+    text-align: center;
+    color: #ded1cc;
+    font-family: ubuntu;
+    font-size: 12px;
+  }
+
+  .card-heading-1 {
+    font-family: ubuntu;
+    font-weight: 400;
+    text-align: center;
+    padding: 15px;
+    background-color: #320b35;
+    color: #ded1cc;
+    border-top-left-radius: 30px;
+  }
+
+  .amount-number-1 {
+    text-align: center;
+    padding-top: 20px;
+    font-size: larger;
+    font-family: ubuntu;
+    background-color: #007bff;
+    color: #fff;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+  }
+
+  .currency-1 {
+    background-color: #320b35;
+    border-bottom-right-radius: 35px;
+    padding: 20px;
+    text-align: center;
+    color: #ded1cc;
+    font-family: ubuntu;
+    font-size: 12px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 35px;
+  }
+
+  .bank-profile-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    padding-left: 20%;
+  }
+
+  .ft-content {
+    text-align: center;
+  }
+
+  /* styles of my transaction section */
+  .transaction-list {
+    padding: 20px;
+    padding: 20px 40px 0 0;
+  }
+
+  .t-row {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+    box-shadow: 0 3px 10px #000000;
+    margin: 0 10px 20px 10px;
+  }
+
+  .a-row {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 100px;
+    box-shadow: 0 3px 10px #000000;
+    margin: 0 10% 20px 10%;
+  }
+
+  .t-details {
+    display: grid;
+    text-align: center;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 5px;
+  }
+
+  .t-buttons {
+    padding-top: 15px;
+  }
+
+  .pad-10 {
+    padding: 10px;
+  }
+}
+
+@media(min-width:1200px) {
+  .h-1 {
+    height: 50px;
+    background-color: #320b35;
+    padding-top: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+
+  .sidenav {
+    z-index: 1;
+    height: 100%;
+    padding: 20px;
+    display: grid;
+    background-color: #320b35;
+    grid-template-rows: 70px 1fr 40px;
+  }
+
+  .profile {
+    padding: 20px 0 0 0px;
+  }
+
+  .profile-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+    padding-top: 100px;
+  }
+
+  .profile-image {
+    background-image: url('../assets/icons/profile1.png');
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    height: 180px;
+    width: 180px;
+  }
+
+  .profile-content {
+    border-left: 1px solid #ccc;
+    padding-top: 15px;
+    padding-left: 25px;
+  }
+
+  .p-bottom {
+    padding-bottom: 15px;
+  }
+
+  .no-bullet {
+    list-style: none;
+  }
+
+
+  ul li {
+    padding: 5px;
+  }
+
+  ul li a {
+    text-decoration: none;
+    color: #ccc;
+  }
+
+  ul li a:hover {
+    color: #ff4d86;
+    border-top: 1px solid #ff4d86;
+  }
+
+  .btn-upload {
+    margin-left: 20px;
+    margin-top: 10px;
+    color: #f3e8e8;
+    background-color: #ef0d41;
+  }
+
+  .btn-upload:hover {
+    color: #f3e8e8;
+    background-color: #320b35;
+  }
+
+  .bank-profile {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .bank-profile-head {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  .balance-amount {
+    height: 160px;
+    width: 160px;
+    margin-left: 45%;
+    margin-top: 50px;
+    border-bottom-right-radius: 45px;
+  }
+
+  .saving-amount {
+    height: 160px;
+    width: 160px;
+    margin-right: 45%;
+    margin-top: 50px;
+    border-bottom-right-radius: 45px;
+  }
+
+  .card-heading {
+    font-family: ubuntu;
+    font-weight: 400;
+    text-align: center;
+    padding: 15px;
+    background-color: #320b35;
+    color: #ded1cc;
+    border-top-right-radius: 30px;
+  }
+
+  .amount-number {
+    text-align: center;
+    padding-top: 20px;
+    font-size: larger;
+    font-family: ubuntu;
+    background-color: #007bff;
+    color: #fff;
+  }
+
+  .currency {
+    background-color: #320b35;
+    border-bottom-right-radius: 35px;
+    padding: 20px;
+    text-align: center;
+    color: #ded1cc;
+    font-family: ubuntu;
+    font-size: 12px;
+  }
+
+  .card-heading-1 {
+    font-family: ubuntu;
+    font-weight: 400;
+    text-align: center;
+    padding: 15px;
+    background-color: #320b35;
+    color: #ded1cc;
+    border-top-left-radius: 30px;
+  }
+
+  .amount-number-1 {
+    text-align: center;
+    padding-top: 20px;
+    font-size: larger;
+    font-family: ubuntu;
+    background-color: #007bff;
+    color: #fff;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+  }
+
+  .currency-1 {
+    background-color: #320b35;
+    border-bottom-right-radius: 35px;
+    padding: 20px;
+    text-align: center;
+    color: #ded1cc;
+    font-family: ubuntu;
+    font-size: 12px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 35px;
+  }
+
+  .bank-profile-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    padding-left: 20%;
+  }
+
+  .ft-content {
+    text-align: center;
+  }
+
+  /* styles of my transaction section */
+  .transaction-list {
+    padding: 20px;
+    padding: 20px 40px 0 0;
+  }
+
+  .a-row {
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr 100px;
+    box-shadow: 0 3px 10px #000000;
+    margin: 0 10px 20px 10px;
+  }
+
+  .t-row {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+    box-shadow: 0 3px 10px #000000;
+    margin: 0 10px 20px 10px;
+  }
+
+  .t-details {
+    padding: 10px;
+    display: grid;
+    text-align: center;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 5px;
+  }
+
+  .t-buttons {
+    padding-top: 15px;
+  }
+
+  .pad-10 {
+    padding: 10px;
+  }
+}
+
+@media(min-height:1366px) {
+  .sidenav {
+    height: 100vh;
+  }
+}
