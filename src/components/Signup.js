@@ -13,14 +13,14 @@ class Signup extends Component {
   };
 
   componentDidMount(){
-    if (this.props.login.isAuthenticated !== undefined) {
+    if (this.props.login !== undefined) {
       if (this.props.login.isAuthenticated) {
         this.props.history.push('/profile')
       } 
     }
   }
   componentWillReceiveProps(nextProps){
-    if (this.props.login.isAuthenticated !== undefined) {
+    if (this.props.login !== undefined) {
       if (nextProps.login.isAuthenticated) {
         this.props.history.push('/profile')
       }

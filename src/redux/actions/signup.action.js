@@ -3,7 +3,7 @@ import axios from 'axios';
 
 import { SIGNUP_FAIL, SIGNUP_SUCCESS} from '../types';
 
-export const signup = (data,history) => async dispatch =>{
+export const signup = (data) => async dispatch =>{
 
   await axios.post('https://api-banka-app.herokuapp.com/api/v1/auth/signup', data)
     .then(result =>{
@@ -11,7 +11,7 @@ export const signup = (data,history) => async dispatch =>{
         type: SIGNUP_SUCCESS,
         payload:result.data
       })
-      history.push('/auth/signin');
+      window.location.href='/auth/signin';
       // toast.success(`::::: ${result.data.message} :::::`)
     })
     .catch(error =>{

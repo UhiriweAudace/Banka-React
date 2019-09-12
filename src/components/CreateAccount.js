@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { toast } from 'react-toastify';
 import PropTypes from 'prop-types';
-import { createAccount } from '../redux/actions/createAccount.action';
+import { createAccount } from '../redux/actions/account.action';
 
 import '../assets/css/style.css';
 import '../assets/css/signup.css';
@@ -58,8 +58,6 @@ class CreateAccount extends Component {
     if (account !== undefined && account.status === 201) {
       toast.success('   Account created Successfully!');
     }
-    console.log('User account type in render::::', this.props);
-
     return (
       <div className='main create-account' id='create-account'>
         <div></div>
