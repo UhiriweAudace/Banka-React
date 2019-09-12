@@ -1,25 +1,65 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { toast } from 'react-toastify';
+import PropTypes from 'prop-types';
+import { createAccount } from '../redux/actions/createAccount.action';
 
 import '../assets/css/style.css';
 import '../assets/css/signup.css';
 import '../assets/css/client.css';
 
 class CreateAccount extends Component {
-  componentDidMount(){
+  state = {
+    nationalId: '',
+    countryResidence: '',
+    DateOfBirth: '',
+    countryBirth: '',
+    currency: '',
+    phone: '',
+    address: '',
+    accountType: 'current'
+  };
+
+  onchangeHandler = e => {
+    this.setState({
+      [e.target.name]: e.target.value
+    });
+  };
+
+  onSubmitHandler = e => {
+    e.preventDefault();
+    const { accountType, currency, DateOfBirth, nationalId } = this.state;
+
+    if (accountType === '') return toast.warn('Account Type is required!');
+    if (currency === '') return toast.warn('Currency is required!');
+    if (DateOfBirth === '') return toast.warn('Date Of Birth is required!');
+    if (nationalId === '') return toast.warn('National Id is required!');
+    const accountData = {
+      type: accountType
+    };
+    this.props.createAccount(accountData);
+  };
+  componentDidMount() {
     if (!this.props.login.isAuthenticated) {
-      window.location.href='/auth/signin';
+      window.location.href = '/auth/signin';
     }
   }
-  componentWillReceiveProps(nextProps){
+  componentWillReceiveProps(nextProps) {
     if (nextProps.login.isAuthenticated) {
-      this.props.history.push('/accounts/new')
+      this.props.history.push('/accounts/new');
     } else {
-      window.location.href='/auth/signin';
+      window.location.href = '/auth/signin';
     }
+
   }
 
   render() {
+    const { account } = this.props;
+    if (account !== undefined && account.status === 201) {
+      toast.success('   Account created Successfully!');
+    }
+    console.log('User account type in render::::', this.props);
+
     return (
       <div className='main create-account' id='create-account'>
         <div></div>
@@ -36,9 +76,10 @@ class CreateAccount extends Component {
                 <br />
                 <input
                   type='number'
-                  name='id'
+                  name='nationalId'
                   id='id'
                   placeholder='Type your ID Number'
+                  onChange={this.onchangeHandler}
                 />
                 <br />
                 <span id='error-message' className='error'>
@@ -52,9 +93,10 @@ class CreateAccount extends Component {
                 <br />
                 <input
                   type='text'
-                  name='country-residence'
+                  name='countryResidence'
                   id='country-residence'
                   placeholder='Type your Country Residence'
+                  onChange={this.onchangeHandler}
                 />
                 <br />
                 <span id='error-message' className='error'>
@@ -70,9 +112,10 @@ class CreateAccount extends Component {
                 <br />
                 <input
                   type='text'
-                  name='countrybirth'
+                  name='countryBirth'
                   id='countrybirth'
                   placeholder='Type your Country of Birth'
+                  onChange={this.onchangeHandler}
                 />
                 <br />
                 <span id='error-message' className='error'></span>
@@ -87,6 +130,7 @@ class CreateAccount extends Component {
                   name='DateOfBirth'
                   id='DateOfBirth'
                   placeholder='Type your Date Of Birth'
+                  onChange={this.onchangeHandler}
                 />
                 <br />
                 <span id='error-message' className='error'>
@@ -106,6 +150,7 @@ class CreateAccount extends Component {
                   name='currency'
                   id='currency'
                   placeholder='Type your currency type'
+                  onChange={this.onchangeHandler}
                 />
                 <br />
                 <span id='error-message' className='error'>
@@ -122,6 +167,7 @@ class CreateAccount extends Component {
                   name='phone'
                   id='phone'
                   placeholder='Type your Phone Number'
+                  onChange={this.onchangeHandler}
                 />
                 <br />
                 <span id='error-message' className='error'></span>
@@ -138,6 +184,7 @@ class CreateAccount extends Component {
                   name='address'
                   id='address'
                   placeholder='Type your current address city'
+                  onChange={this.onchangeHandler}
                 />
                 <br />
                 <span id='error-message' className='error-message'></span>
@@ -147,12 +194,16 @@ class CreateAccount extends Component {
                   Account Type <span className='is-required'>*</span>
                 </label>
                 <br />
-                <select name='account-type' id='account-type'>
-                  <option value='1' disabled>
+                <select
+                  name='accountType'
+                  id='account-type'
+                  onChange={this.onchangeHandler}
+                >
+                  <option value='0' disabled>
                     Select Account type
                   </option>
-                  <option value='2'>Saving Account</option>
-                  <option value='3'>Current Account</option>
+                  <option value='current'>Current Account</option>
+                  <option value='saving'>Saving Account</option>
                 </select>
                 <br />
                 <span id='error-message' className='error-message'></span>
@@ -160,7 +211,12 @@ class CreateAccount extends Component {
             </div>
             <div className=''>
               <div className='col-1'>
-                <button className='btn-1 primary' id='create'>
+                <button
+                  className='btn-1 primary'
+                  id='create'
+                  type='submit'
+                  onClick={this.onSubmitHandler}
+                >
                   Create
                 </button>
               </div>
@@ -171,11 +227,16 @@ class CreateAccount extends Component {
     );
   }
 }
-
+CreateAccount.propTypes = {
+  login: PropTypes.object.isRequired,
+  createAccount: PropTypes.func.isRequired
+};
 const mapStateToProps = state => ({
-  login:state.login
+  login: state.login,
+  account: state.accountData
 });
 
 export default connect(
-  mapStateToProps
+  mapStateToProps,
+  { createAccount }
 )(CreateAccount);
