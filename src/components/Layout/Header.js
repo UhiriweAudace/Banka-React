@@ -25,7 +25,7 @@ class Header extends React.Component {
                 Bank Account List
               </Link>
               {/* <Link href='#' className='white' id='saving-account'></Link> */}
-              <Link href='/' className='white active' onClick={this.onLogoutUser} id='signout'>
+              <Link to='/' className='white active' onClick={this.onLogoutUser} id='signout'>
                 SignOut
               </Link>
             </nav>

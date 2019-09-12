@@ -15,12 +15,12 @@ class Signin extends Component {
     if (this.props.login.isAuthenticated) {
       this.props.history.push('/profile')
     } 
+    this.redirectOnLoginSuccess();
   }
   componentWillReceiveProps(nextProps){
     if (nextProps.login.isAuthenticated) {
       this.props.history.push('/profile')
     }
-    this.redirectOnLoginSuccess();
 
   }
   onChangeHandler = e => {

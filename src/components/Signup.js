@@ -13,16 +13,20 @@ class Signup extends Component {
   };
 
   componentDidMount(){
-    if (this.props.login.isAuthenticated) {
-      this.props.history.push('/profile')
-    } 
-  }
-  componentWillReceiveProps(nextProps){
-    if (nextProps.login.isAuthenticated) {
-      this.props.history.push('/profile')
+    if (this.props.login.isAuthenticated !== undefined) {
+      if (this.props.login.isAuthenticated) {
+        this.props.history.push('/profile')
+      } 
     }
   }
-  
+  componentWillReceiveProps(nextProps){
+    if (this.props.login.isAuthenticated !== undefined) {
+      if (nextProps.login.isAuthenticated) {
+        this.props.history.push('/profile')
+      }
+    }
+  }
+
   onChangeHandler = e => {
     this.setState({
       [e.target.name]: e.target.value

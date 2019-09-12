@@ -9,6 +9,13 @@ class Profile extends Component {
       window.location.href='/';
     }
   }
+  // componentWillReceiveProps(nextProps){
+  //   if (nextProps.login.isAuthenticated) {
+  //     this.props.history.push('/profile')
+  //   } else {
+  //     window.location.href='/';
+  //   }
+  // }
   render() {
     console.log('::::::::::::::::>>>', this.props.login);
     const { login } = this.props;

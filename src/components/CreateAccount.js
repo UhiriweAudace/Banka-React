@@ -11,6 +11,13 @@ class CreateAccount extends Component {
       window.location.href='/auth/signin';
     }
   }
+  componentWillReceiveProps(nextProps){
+    if (nextProps.login.isAuthenticated) {
+      this.props.history.push('/accounts/new')
+    } else {
+      window.location.href='/auth/signin';
+    }
+  }
 
   render() {
     return (
