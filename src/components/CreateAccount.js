@@ -6,6 +6,11 @@ import '../assets/css/signup.css';
 import '../assets/css/client.css';
 
 class CreateAccount extends Component {
+  componentDidMount(){
+    if (!this.props.login.isAuthenticated) {
+      window.location.href='/auth/signin';
+    }
+  }
 
   render() {
     return (

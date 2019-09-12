@@ -12,6 +12,17 @@ class Signup extends Component {
     password: ''
   };
 
+  componentDidMount(){
+    if (this.props.login.isAuthenticated) {
+      this.props.history.push('/profile')
+    } 
+  }
+  componentWillReceiveProps(nextProps){
+    if (nextProps.login.isAuthenticated) {
+      this.props.history.push('/profile')
+    }
+  }
+  
   onChangeHandler = e => {
     this.setState({
       [e.target.name]: e.target.value

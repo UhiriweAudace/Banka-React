@@ -1,8 +1,22 @@
 import React, { Component } from 'react'; 
 import { Link} from 'react-router-dom';
+import { connect } from 'react-redux'
+
 import '../assets/css/style.css';
 
 class Home extends Component {
+  componentDidMount(){
+    if (this.props.login.isAuthenticated) {
+      this.props.history.push('/profile')
+    } else {
+      this.props.history.push('/')
+    }
+  }
+  componentWillReceiveProps(nextProps){
+    if (nextProps.login.isAuthenticated) {
+      this.props.history.push('/profile')
+    }
+  }
   render() {
     return (
       <div>
@@ -26,5 +40,7 @@ class Home extends Component {
     )
   }
 }
-
-export default Home
+const mapStateToProps = state => ({
+  login: state.login
+}); 
+export default connect(mapStateToProps)(Home)

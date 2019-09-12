@@ -1,6 +1,8 @@
 import axios from 'axios';
-import { SIGNIN_FAIL, SIGNIN_SUCCESS} from '../types';
+import JWT from 'jwt-decode';
+import { SIGNIN_FAIL, SIGNIN_SUCCESS, SET_CURRENT_USER} from '../types';
 import {toast} from 'react-toastify';
+import setAuthToken from '../../utils/setAuthToken';
 
 export const signin = (data) => async dispatch =>{
 
@@ -16,8 +18,16 @@ export const signin = (data) => async dispatch =>{
         type: SIGNIN_SUCCESS,
         payload:result.data
       })
+      // save Token to SESS Storage
       sessionStorage.setItem('token',result.data.data.token);
-      toast.success(`::::: ${result.data.message} :::::`)
+      // display a success LOGIN Message
+      toast.success(`::::: ${result.data.message} :::::`);
+      // set Auth Header to request
+      setAuthToken(result.data.data.token);
+      // decode the token for getting user data
+      const decoded =JWT(result.data.data.token);
+      // set Current User
+      dispatch( setCurrentUser(decoded));
     })
     .catch(error =>{
       dispatch({
@@ -26,3 +36,16 @@ export const signin = (data) => async dispatch =>{
       })
     });
 };
+
+export const setCurrentUser = (decodedUser) =>{
+  return {
+    type: SET_CURRENT_USER,
+    payload: decodedUser
+  }
+}
+
+export const logOutUser = ()=> dispatch =>{
+  sessionStorage.removeItem('token');
+  setAuthToken(false);
+  dispatch(setCurrentUser({}));
+}

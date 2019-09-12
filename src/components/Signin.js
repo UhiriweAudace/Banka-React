@@ -11,8 +11,17 @@ class Signin extends Component {
     password: ''
   };
 
-  componentDidUpdate(){
+  componentDidMount(){
+    if (this.props.login.isAuthenticated) {
+      this.props.history.push('/profile')
+    } 
+  }
+  componentWillReceiveProps(nextProps){
+    if (nextProps.login.isAuthenticated) {
+      this.props.history.push('/profile')
+    }
     this.redirectOnLoginSuccess();
+
   }
   onChangeHandler = e => {
     this.setState({
@@ -33,7 +42,7 @@ class Signin extends Component {
 
   redirectOnLoginSuccess = () =>{
     const { login } = this.props;
-    return login.isLoggedIn ? this.props.history.push('/profile' || '/') : null;
+    return login.isAuthenticated ? this.props.history.push('/profile' || '/') : null;
   }
   render() {
     const { login } = this.props;

@@ -1,17 +1,19 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import JWT from 'jwt-decode';
-
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
+
 import '../../assets/css/style.css';
+import { logOutUser} from '../../redux/actions/signin.action';
 
 class Header extends React.Component {
+
+  onLogoutUser = () =>{
+    this.props.logOutUser();
+  }
   render() {
     const { login } = this.props;
-    // const isAuthenticated = JWT(sessionStorage.getItem('token'));
-
-    // console.log('This debugging in the header::::', isAuthenticated.value);
-    if (login.isLoggedIn) {
+    if (login.isAuthenticated) {
       return (
         <div className='content-section'>
           <div className='h-1'>
@@ -23,7 +25,7 @@ class Header extends React.Component {
                 Bank Account List
               </Link>
               {/* <Link href='#' className='white' id='saving-account'></Link> */}
-              <Link href='../index.html' className='white active' id='signout'>
+              <Link href='/' className='white active' onClick={this.onLogoutUser} id='signout'>
                 SignOut
               </Link>
             </nav>
@@ -80,10 +82,16 @@ class Header extends React.Component {
     );
   }
 }
+
+Header.propTypes = {
+  logOutUser: PropTypes.func.isRequired,
+  login: PropTypes.object.isRequired
+}
+
 const mapStateToProps = state => ({
   login: state.login
 });
 export default connect(
   mapStateToProps,
-  {}
+  {logOutUser}
 )(Header);
