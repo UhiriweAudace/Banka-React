@@ -1,0 +1,118 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Signin Page It should render the Login Page 1`] = `ShallowWrapper {}`;
+
+exports[`submit button test... User will be able to click on submit button and send an action 1`] = `
+<main>
+  <div
+    className="main-content"
+  >
+    <div
+      className="side-1"
+    />
+    <div
+      className="side-2"
+    >
+      <div
+        className="form"
+      >
+        <h3
+          className="d-purple"
+        >
+          Login
+        </h3>
+        <hr />
+        <div
+          className="rows"
+        >
+          <div
+            className="col-1"
+          >
+            <label
+              htmlFor=""
+            >
+              Email 
+              <span
+                className="is-required"
+              >
+                *
+              </span>
+            </label>
+            <br />
+            <input
+              id="email"
+              name="email"
+              onChange={[Function]}
+              placeholder="Type your e-mail"
+              type="text"
+            />
+            <br />
+            <span
+              className="error"
+              id="error-message"
+            >
+              Email field is required
+            </span>
+          </div>
+          <div
+            className="col-1"
+          >
+            <label
+              htmlFor=""
+            >
+              Password 
+              <span
+                className="is-required"
+              >
+                *
+              </span>
+            </label>
+            <br />
+            <input
+              id="Password"
+              name="password"
+              onChange={[Function]}
+              placeholder="Type your Password"
+              type="password"
+            />
+            <br />
+            <span
+              className="error"
+              id="error-message"
+            >
+              Password field is required
+            </span>
+          </div>
+        </div>
+        <div
+          className="rows"
+        >
+          <div
+            className="col-1"
+          >
+            <button
+              className="btn-1 primary bottom"
+              id="login"
+              onClick={[Function]}
+              type="submit"
+            >
+              Login
+            </button>
+             
+             
+            <button
+              className="btn-1 primary"
+              id="reset"
+            >
+              Reset Password
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="side-3"
+    />
+  </div>
+</main>
+`;

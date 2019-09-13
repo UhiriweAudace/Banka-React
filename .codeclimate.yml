@@ -1,6 +1,4 @@
 ## exclude UI folder in the Analysis of made by code climate
 exclude_patterns:
-- "UI/"
-- "server/tests/**/*.js"
-- "server/controllers/"
-- "server/models/users.js"
+- "__tests__/**/*.js"
+- "__mocks__/**/*.js"

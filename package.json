@@ -9,7 +9,7 @@
     "clean:dist": "rimraf ./dist && mkdir dist",
     "prebuild": "npm run clean:dist",
     "build": "webpack --mode production",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest --coverage -u",
     "heroku-postbuild": "npm run build"
   },
   "repository": {
@@ -44,11 +44,29 @@
     "@babel/preset-env": "^7.6.0",
     "@babel/preset-react": "^7.0.0",
     "css-loader": "^3.2.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "enzyme-to-json": "^3.4.0",
     "file-loader": "^4.2.0",
     "html-webpack-plugin": "^3.2.0",
+    "jest": "^24.9.0",
     "mini-css-extract-plugin": "^0.8.0",
+    "moxios": "^0.4.0",
     "webpack": "^4.39.3",
     "webpack-cli": "^3.3.8",
     "webpack-dev-server": "^3.8.0"
+  },
+  "jest": {
+    "verbose": true,
+    "setupFilesAfterEnv": [
+      "./__tests__/setup/index.js"
+    ],
+    "testPathIgnorePatterns": [
+      "./__tests__/setup/",
+      "./__tests__/mockData/"
+    ],
+    "moduleNameMapper": {
+      "\\.(css|less|scss)$": "<rootDir>/__mocks__/MockStyle.js"
+    }
   }
 }

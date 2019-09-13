@@ -5,7 +5,7 @@ import '../assets/css/style.css';
 import '../assets/css/signup.css';
 import { toast } from 'react-toastify';
 
-class Signin extends Component {
+export class Signin extends Component {
   state = {
     email: '',
     password: ''
