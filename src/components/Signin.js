@@ -11,22 +11,21 @@ export class Signin extends Component {
     password: ''
   };
 
-  componentDidMount(){
+  componentDidMount() {
     if (this.props.login.isAuthenticated) {
       /* istanbul ignore next */
-      this.props.history.push('/profile')
-    } 
+      this.props.history.push('/profile');
+    }
     this.redirectOnLoginSuccess();
   }
 
   /* istanbul ignore next */
-  componentWillReceiveProps(nextProps){
+  componentWillReceiveProps(nextProps) {
     /* istanbul ignore next */
     if (nextProps.login.isAuthenticated) {
       /* istanbul ignore next */
-      this.props.history.push('/profile')
+      this.props.history.push('/profile');
     }
-
   }
   onChangeHandler = e => {
     this.setState({
@@ -37,9 +36,9 @@ export class Signin extends Component {
     e.preventDefault();
     const { email, password } = this.state;
     /* istanbul ignore next */
-    if (email ==='') return toast.warn('Email is required!');
+    if (email === '') return toast.warn('Email is required!');
     /* istanbul ignore next */
-    if (password ==='') return toast.warn('password is required!');
+    if (password === '') return toast.warn('password is required!');
     const data = {
       email,
       password
@@ -47,16 +46,35 @@ export class Signin extends Component {
     this.props.signin(data);
   };
 
-  redirectOnLoginSuccess = () =>{
+  redirectOnLoginSuccess = () => {
     const { login } = this.props;
     /* istanbul ignore next */
-    return login.isAuthenticated ? this.props.history.push('/profile' || '/') : null;
-  }
+    return login.isAuthenticated
+      ? this.props.history.push('/profile' || '/')
+      : null;
+  };
   render() {
     const { login } = this.props;
-    if (login.errors !== undefined && login.errors.status === 400 || 404) {
-      /* istanbul ignore next */
-      toast.warn(`${login.errors.message}`);
+    if (
+      (login.errors.data !== undefined &&
+        /* istanbul ignore next */
+        login.errors.data.message !== undefined &&
+        /* istanbul ignore next */
+        login.errors.data.status !== undefined &&
+        /* istanbul ignore next */
+        login.errors.data.status === 400) ||
+      404
+    ) {
+      if (login.errors.data !== undefined) {
+        /* istanbul ignore next */
+        toast.warn(
+          `${
+            login.errors.data.status === 400
+              ? login.errors.data.message
+              : login.errors.data.error
+          }`
+        );
+      }
     }
     return (
       <main>

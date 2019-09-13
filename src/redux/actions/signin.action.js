@@ -2,7 +2,6 @@ import axios from 'axios';
 import JWT from 'jwt-decode';
 import { SIGNIN_FAIL, SIGNIN_SUCCESS, SET_CURRENT_USER} from '../types';
 import {toast} from 'react-toastify';
-import setAuthToken from '../../utils/setAuthToken';
 
 export const signin = (data) => async dispatch =>{
 
@@ -20,19 +19,17 @@ export const signin = (data) => async dispatch =>{
       })
       // save Token to SESS Storage
       sessionStorage.setItem('token',result.data.data.token);
-      // display a success LOGIN Message
+      /* istanbul ignore next */
       toast.success(`::::: ${result.data.message} :::::`);
-      // set Auth Header to request
-      setAuthToken(result.data.data.token);
-      // decode the token for getting user data
+      /* istanbul ignore next */
       const decoded =JWT(result.data.data.token);
-      // set Current User
+      /* istanbul ignore next */
       dispatch( setCurrentUser(decoded));
     })
     .catch(error =>{
       dispatch({
         type: SIGNIN_FAIL,
-        payload: error.response.data
+        payload: error.response
       })
     });
 };
@@ -44,8 +41,10 @@ export const setCurrentUser = (decodedUser) =>{
   }
 }
 
+/* istanbul ignore next */
 export const logOutUser = ()=> dispatch =>{
+  /* istanbul ignore next */
   sessionStorage.removeItem('token');
-  setAuthToken(false);
+  /* istanbul ignore next */
   dispatch(setCurrentUser({}));
 }

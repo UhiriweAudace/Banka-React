@@ -1,12 +1,10 @@
 import axios from 'axios';
-import setAuthToken from '../../utils/setAuthToken';
 import {toast} from 'react-toastify';
 
 import { CREATE_ACCOUNT_FAIL, CREATE_ACCOUNT_SUCCESS, GET_ACCOUNT_FAIL, GET_ACCOUNT_SUCCESS} from '../types';
 
 export const createAccount = (data) => async dispatch =>{
   // set Auth Header to request
-  setAuthToken(sessionStorage.getItem('token'));
   const headers = {
     'Content-Type': 'application/json',
     'Access-Control-Allow-Origin': '*',
@@ -33,7 +31,6 @@ export const createAccount = (data) => async dispatch =>{
 
 export const getAllAccounts = () => async dispatch =>{
   // set Auth Header to request
-  setAuthToken(sessionStorage.getItem('token'));
   const headers = {
     'Content-Type': 'application/json',
     'Access-Control-Allow-Origin': '*',
