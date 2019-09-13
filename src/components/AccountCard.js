@@ -1,7 +1,6 @@
 import React from 'react'
 
 const AccountCard = ({account}) => {
-  console.log('This is Andela:::::::', account);
   return (
     <div className="t-row" key={account.accountNumber}>
       <label htmlFor="" className={`white ${account.type === 'saving' ? 'lbl-debit' : 'lbl-credit'}`}>{account.type === 'saving' ? 'Saving' :'Current'} Account</label>

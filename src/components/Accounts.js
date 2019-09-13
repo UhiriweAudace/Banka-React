@@ -4,7 +4,7 @@ import AccountCard from './AccountCard';
 import {toast} from 'react-toastify';
 import {getAllAccounts} from '../redux/actions/account.action';
 
-class Accounts extends Component {
+export class Accounts extends Component {
 
   componentDidMount() {
     if (!this.props.login.isAuthenticated) {
@@ -14,7 +14,6 @@ class Accounts extends Component {
   }
   render() {
     const { accounts} = this.props;
-    console.log('User account type in render::::', accounts.accounts);
     return (
       <div className="main my-bank-accounts" id="my-bank-accounts">
         <div></div>
@@ -32,9 +31,7 @@ class Accounts extends Component {
                   <label htmlFor="" className="small"> </label>
                   <label htmlFor="" className="small">  Whoops! Currently, You don't have any Bank Accounts.</label>
                 </div>
-                <div className="t-buttons">
-                  {/* <button className="btn-flat primary white" id="details" >Details</button> */}
-                </div>
+                <div className="t-buttons"></div>
               </div>
             )
           }

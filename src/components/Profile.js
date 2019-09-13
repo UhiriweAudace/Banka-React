@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Link } from "react-router-dom";
-import { capitalize } from '../utils/capitilize';
-class Profile extends Component {
+import { capitalize } from '../utils/capitalize';
+export class Profile extends Component {
   componentDidMount() {
     if (this.props.login.isAuthenticated) {
       this.props.history.push('/profile');
@@ -11,7 +10,6 @@ class Profile extends Component {
     }
   }
   render() {
-    console.log('::::::::::::::::>>>', this.props.login);
     const { login } = this.props;
     return (
       <div>
@@ -21,7 +19,6 @@ class Profile extends Component {
             <div className='profile-card'>
               <div className='profile-left'>
                 <div className='profile-image center'>
-                  {/* <!-- <h5 className="heading-5">Your Profile Picture</h5> --> */}
                 </div>
                 <button className='btn btn-upload'>
                   Upload Your Profile Picture

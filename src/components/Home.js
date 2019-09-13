@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 
 import '../assets/css/style.css';
 
-class Home extends Component {
+export class Home extends Component {
   componentDidMount(){
     if (this.props.login.isAuthenticated) {
       this.props.history.push('/profile')

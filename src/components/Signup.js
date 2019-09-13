@@ -4,12 +4,13 @@ import { toast } from 'react-toastify';
 
 import { signup } from '../redux/actions/signup.action';
 
-class Signup extends Component {
+export class Signup extends Component {
   state = {
     firstname: '',
     lastname: '',
     email: '',
-    password: ''
+    password: '',
+    address: ''
   };
 
   componentDidMount(){
@@ -24,6 +25,17 @@ class Signup extends Component {
       if (nextProps.login.isAuthenticated) {
         this.props.history.push('/profile')
       }
+    }
+    if (
+      nextProps.signupUser.errors !== undefined &&
+      nextProps.signupUser.errors.data !== undefined &&
+      !nextProps.signupUser.isAuthenticated
+
+    ) {
+      return toast.warn(
+        `${nextProps.signupUser.errors.data.error ||
+          nextProps.signupUser.errors.data.message}`
+      );
     }
   }
 
@@ -43,14 +55,7 @@ class Signup extends Component {
     };
     this.props.signup(data);
   };
-  render() {
-    const { signupUser } = this.props;
-    if (signupUser.errors !== undefined && signupUser.errors.status === 400) {
-      toast.warn(`${signupUser.errors.data.error}`);
-    }
-    if (signupUser.signup.status !== undefined && signupUser.signup.status === 201) {
-      toast.success(`${signupUser.signup.message}`);
-    }
+  render() {    
     return (
       <div>
         <div className='main-content'>
@@ -134,20 +139,6 @@ class Signup extends Component {
               <div className='rows'>
                 <div className='col-1'>
                   <label htmlFor=''>
-                    Phone Number <span className='is-required'></span>
-                  </label>
-                  <br />
-                  <input
-                    type='number'
-                    name='phone'
-                    id='phone'
-                    placeholder='Type your Phone Number'
-                  />
-                  <br />
-                  <span id='error-message' className='error'></span>
-                </div>
-                <div className='col-1'>
-                  <label htmlFor=''>
                     Address <span className='is-required'></span>
                   </label>
                   <br />
@@ -156,6 +147,7 @@ class Signup extends Component {
                     name='address'
                     id='address'
                     placeholder='Type your current address city'
+                    onChange={this.onChangeHandler}
                   />
                   <br />
                   <span id='error-message' className='error'></span>

@@ -18,7 +18,7 @@ export const createAccount = (data) => async dispatch =>{
         type: CREATE_ACCOUNT_SUCCESS,
         payload:result.data
       })
-      toast.success('   Account created Successfully!');
+      toast.success('Account created Successfully!');
       window.location.href='/accounts';
     })
     .catch(error =>{

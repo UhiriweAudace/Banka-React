@@ -1,0 +1,294 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Signup Page It should render the CreateAccount Page 1`] = `ShallowWrapper {}`;
+
+exports[`submit button test... User will be able to click on submit button and send an action 1`] = `
+<div
+  className="main create-account"
+  id="create-account"
+>
+  <div />
+  <div>
+    <div
+      className="form"
+    >
+      <h3
+        className="d-purple"
+      >
+        Create New Bank Account
+      </h3>
+      <hr />
+      <div
+        className="rows"
+      >
+        <div
+          className="col-1"
+        >
+          <label
+            htmlFor=""
+          >
+            National Identity Card Number
+             
+            <span
+              className="is-required"
+            >
+              *
+            </span>
+          </label>
+          <br />
+          <input
+            id="id"
+            name="nationalId"
+            onChange={[Function]}
+            placeholder="Type your ID Number"
+            type="number"
+          />
+          <br />
+          <span
+            className="error"
+            id="error-message"
+          >
+            id field is required
+          </span>
+        </div>
+        <div
+          className="col-1"
+        >
+          <label
+            htmlFor=""
+          >
+            Country Residence 
+            <span
+              className="is-required"
+            >
+              *
+            </span>
+          </label>
+          <br />
+          <input
+            id="country-residence"
+            name="countryResidence"
+            onChange={[Function]}
+            placeholder="Type your Country Residence"
+            type="text"
+          />
+          <br />
+          <span
+            className="error"
+            id="error-message"
+          >
+            Lastname field is required
+          </span>
+        </div>
+      </div>
+      <div
+        className="rows"
+      >
+        <div
+          className="col-1"
+        >
+          <label
+            htmlFor=""
+          >
+            Country Of Birth 
+            <span
+              className="is-required"
+            />
+          </label>
+          <br />
+          <input
+            id="countryBirth"
+            name="countryBirth"
+            onChange={[Function]}
+            placeholder="Type your Country of Birth"
+            type="text"
+          />
+          <br />
+          <span
+            className="error"
+            id="error-message"
+          />
+        </div>
+        <div
+          className="col-1"
+        >
+          <label
+            htmlFor=""
+          >
+            Date of Birth 
+            <span
+              className="is-required"
+            >
+              *
+            </span>
+          </label>
+          <br />
+          <input
+            id="DateOfBirth"
+            name="DateOfBirth"
+            onChange={[Function]}
+            placeholder="Type your Date Of Birth"
+            type="date"
+          />
+          <br />
+          <span
+            className="error"
+            id="error-message"
+          >
+            DateOfBirth field is required
+          </span>
+        </div>
+      </div>
+      <div
+        className="rows"
+      >
+        <div
+          className="col-1"
+        >
+          <label
+            htmlFor=""
+          >
+            Currency Type 
+            <i>
+              (eg: For Rwandan Francs =&gt; Rwf)
+            </i>
+             
+            <span
+              className="is-required"
+            >
+              *
+            </span>
+          </label>
+          <br />
+          <input
+            id="currency"
+            name="currency"
+            onChange={[Function]}
+            placeholder="Type your currency type"
+            type="text"
+          />
+          <br />
+          <span
+            className="error"
+            id="error-message"
+          >
+            Currency field is required
+          </span>
+        </div>
+        <div
+          className="col-1"
+        >
+          <label
+            htmlFor=""
+          >
+            Phone Number 
+            <span
+              className="is-required"
+            />
+          </label>
+          <br />
+          <input
+            id="phone"
+            name="phone"
+            onChange={[Function]}
+            placeholder="Type your Phone Number"
+            type="number"
+          />
+          <br />
+          <span
+            className="error"
+            id="error-message"
+          />
+        </div>
+      </div>
+      <div
+        className="rows"
+      >
+        <div
+          className="col-1"
+        >
+          <label
+            htmlFor=""
+          >
+            Address 
+            <span
+              className="is-required"
+            />
+          </label>
+          <br />
+          <input
+            id="address"
+            name="address"
+            onChange={[Function]}
+            placeholder="Type your current address city"
+            type="text"
+          />
+          <br />
+          <span
+            className="error-message"
+            id="error-message"
+          />
+        </div>
+        <div
+          className="col-1"
+        >
+          <label
+            htmlFor=""
+          >
+            Account Type 
+            <span
+              className="is-required"
+            >
+              *
+            </span>
+          </label>
+          <br />
+          <select
+            id="account-type"
+            name="accountType"
+            onChange={[Function]}
+          >
+            <option
+              disabled={true}
+              value="0"
+            >
+              Select Account type
+            </option>
+            <option
+              value="current"
+            >
+              Current Account
+            </option>
+            <option
+              value="saving"
+            >
+              Saving Account
+            </option>
+          </select>
+          <br />
+          <span
+            className="error-message"
+            id="error-message"
+          />
+        </div>
+      </div>
+      <div
+        className=""
+      >
+        <div
+          className="col-1"
+        >
+          <button
+            className="btn-1 primary"
+            id="create"
+            onClick={[Function]}
+            type="submit"
+          >
+            Create
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

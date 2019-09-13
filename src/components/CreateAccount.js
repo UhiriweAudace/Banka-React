@@ -8,7 +8,7 @@ import '../assets/css/style.css';
 import '../assets/css/signup.css';
 import '../assets/css/client.css';
 
-class CreateAccount extends Component {
+export class CreateAccount extends Component {
   state = {
     nationalId: '',
     countryResidence: '',
@@ -111,7 +111,7 @@ class CreateAccount extends Component {
                 <input
                   type='text'
                   name='countryBirth'
-                  id='countrybirth'
+                  id='countryBirth'
                   placeholder='Type your Country of Birth'
                   onChange={this.onchangeHandler}
                 />
