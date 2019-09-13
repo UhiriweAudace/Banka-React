@@ -56,7 +56,9 @@ export class Signin extends Component {
   render() {
     const { login } = this.props;
     if (
-      (login.errors.data !== undefined &&
+      (login.errors !== undefined &&
+        /* istanbul ignore next */
+        login.errors.data !== undefined &&
         /* istanbul ignore next */
         login.errors.data.message !== undefined &&
         /* istanbul ignore next */

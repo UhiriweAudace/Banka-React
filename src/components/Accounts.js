@@ -20,7 +20,7 @@ class Accounts extends Component {
         <div></div>
         <div className="transaction-list">
           {
-            accounts !== undefined && accounts.accounts.data !== undefined ? accounts.accounts.data.map( account => {
+            accounts !== undefined && accounts.accounts.accounts !== undefined ? accounts.accounts.accounts.map( account => {
               toast.success(`    ${accounts.accounts.message}`)
               return (
                 <AccountCard account={account}/>

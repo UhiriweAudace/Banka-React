@@ -18,6 +18,9 @@ class Header extends React.Component {
         <div className='content-section'>
           <div className='h-1'>
             <nav className='navbar-link-client'>
+            <Link to='/profile' className='white' id='create-link'>
+                Profile
+              </Link>
               <Link to='/accounts/new' className='white' id='create-link'>
                 Create Account
               </Link>
